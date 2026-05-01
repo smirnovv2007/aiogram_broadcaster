@@ -16,7 +16,7 @@ if TYPE_CHECKING:
 
 ModelType = TypeVar("ModelType", bound=BaseModel)
 
-TEXT_FIELDS = {"text", "caption", "title", "description"}
+TEXT_FIELDS = {"html_text", "title", "description"}
 
 
 class PlaceholderManager(Placeholder):
