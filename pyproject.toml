@@ -47,7 +47,8 @@ keywords = [
     "wrapper"
 ]
 dependencies = [
-    "aiogram>=3.22.0"
+    "aiogram>=3.22.0",
+    "sulguk>=0.11.0"
 ]
 
 [project.optional-dependencies]
