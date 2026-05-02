@@ -48,7 +48,7 @@ class PlaceholderManager(Placeholder):
                 rendered_html = await self._render_source(html, **context)
 
                 if rendered_html != html:
-                    sulguk_result = transform_html(rendered_html)
+                    sulguk_result = transform_html(rendered_html.replace("\n", "<br />"))
                     updates[field_name] = sulguk_result.text
                     updates[ENTITIES_FIELD_MAP[field_name]] = sulguk_result.entities
             else:
